@@ -8,7 +8,19 @@ Usage
 - Run the command `docker compose up` to build & run the app
 - Visit port 8000 and specify the target url with the relevant data passed.
 
-Examples run commands using curl:
+---
+
+#### Endpoints
+* /sms -> Send a text message to a phone number of choice with a message you specify
+* /mailer -> Sends an email to an email address of choice with a name & message
+* /tweet  -> Post a tweet to the specified account
+
+**All the endpoints only accept POST requests**
+
+---
+
+##### Running app
+Examples commands using curl to run via the command line:
 ```
 curl -i -d "{\"receiver_email\": \"test@test.com\", \"receiver_name\": \"test\" ,\"mail_message\": \"Hello this is a test Email\"}" localhost:8000/mailer
 
