@@ -1,9 +1,11 @@
 # Microservices
-Microservices using [nameko](https://github.com/nameko/nameko)
+Microservices using [nameko](https://github.com/nameko/nameko) framework
 
 Usage
 - Clone/Download the repository
 - Create a .env file and add tokens/secrets for twitter to use the Twitter bot microservices, twilio to use sms messaging microservice & google using sign-in with app password to use the email microservice.(More info on app passwords [here](https://support.google.com/accounts/answer/185833))
+    *****Env Naming can be found in the `.env.example` file*****
+    
 - Update/Replace the email message templates based on your preference. They are located in the `mailer/templates` directory
 - Run the command `docker compose up` to build & run the app
 - Visit port 8000 and specify the target url with the relevant data passed.
