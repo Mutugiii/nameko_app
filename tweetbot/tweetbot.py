@@ -3,10 +3,10 @@ import tweepy
 from nameko.rpc import rpc
 
 def create_api():
-    consumer_key = os.environ.get('API_KEY')
-    consumer_secret = os.environ.get('API_SECRET_KEY')
-    access_token = os.environ.get('ACCESS_TOKEN')
-    access_token_secret = os.environ.get('ACCESS_TOKEN_SECRET')
+    consumer_key = os.environ.get('TWITTER_API_KEY')
+    consumer_secret = os.environ.get('TWITTER_API_SECRET_KEY')
+    access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
+    access_token_secret = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
 
     auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
     auth.set_access_token(access_token,access_token_secret)
