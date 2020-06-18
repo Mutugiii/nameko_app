@@ -10,6 +10,11 @@ Usage
 - Run the command `docker compose up` to build & run the app
 - Visit port 8000 and specify the target url with the relevant data passed.
 
+Rebuild
+
+To rebuild the app after making tweaks to the app or adding a microservice
+Use `docker-compose build` to rebuild
+
 ---
 
 #### Endpoints
@@ -30,3 +35,5 @@ curl -i -d "{\"tweet_message\": \"Hello World\"}" localhost:8000/tweet
 
 curl -i -d "{\"receiver_number\": \"+254728104485\", \"sms_message\": \"Test sms\"}" localhost:8000/sms
 ```
+
+Sample run commands are in the `run.txt` file
